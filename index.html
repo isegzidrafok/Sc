@@ -7,7 +7,7 @@
       body{
         background-color: black;
         font-family: arial;
-        font-size: 5vw;
+        font-size: 6vw;
         position: relative;
       }
       body *{
@@ -17,7 +17,7 @@
         position: absolute;
         border-width: 0.5vw;
         padding: 1vw 2vw;
-        border-radius: 25%;
+        border-radius: 20%;
         border-style: solid;
       }
       input::placeholder{
@@ -33,6 +33,7 @@
         kod.style.borderColor="yellow";
       })
       kod.style.left=((window.innerWidth * (1/2)) - (kod.getBoundingClientRect().width * (1/2))) + "px";
+      kod.style.top=((window.innerHeight * (1/2)) - (kod.getBoundingClientRect().height * (1/2))) + "px";
     </script>
   </body>
 </html>
