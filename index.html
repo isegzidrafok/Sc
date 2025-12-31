@@ -8,20 +8,29 @@
         background-color: black;
         font-family: arial;
         font-size: 5vw;
-        display: flex;
-        align-items: center;
+        position: relative;
       }
       body *{
         background-color: black;
         border-color: yellow;
         color: yellow;
+        position: absolute;
+        border-width: 1vw;
+        padding: 2vw;
+        border-radius: 25%;
       }
+      input::placeholder{
+        color: yellow;
+        }
     </style>
   </head>
   <body>
-    <input placeholder="CODE">
+    <input id="kod" placeholder="CODE">
     <script>
-      
+      const kod = document.getElementById("kod");
+      kod.addEventListener("focus", function(){
+        kod.style.borderColor="yellow";
+      })
     </script>
   </body>
 </html>
