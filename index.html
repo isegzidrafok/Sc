@@ -15,9 +15,10 @@
         border-color: yellow;
         color: yellow;
         position: absolute;
-        border-width: 1vw;
-        padding: 2vw;
+        border-width: 0.5vw;
+        padding: 1vw 2vw;
         border-radius: 25%;
+        border-style: solid;
       }
       input::placeholder{
         color: yellow;
@@ -31,6 +32,7 @@
       kod.addEventListener("focus", function(){
         kod.style.borderColor="yellow";
       })
+      kod.style.left=((window.innerWidth * (1/2)) - (kod.getBoundingClientRect().width * (1/2))) + "px";
     </script>
   </body>
 </html>
